@@ -24,14 +24,14 @@ I_q = 1;
 %% Flux observer param
 flux_initial = [1; 1];
 nu = [50, 550];
-gamma = 0.01;
+gamma = 0.04;
 G = [gamma, 0; 0, gamma];
 rho_1 = 0.9;
 
 %% Velocity observer param
-mu = 800;               % velocity and torue model filter
-gamma_L = 20000;        % torque estimatro gain
-gamma_w = 30000;        % speed observer gain
+mu = 1200;              % velocity and torue model filter
+gamma_L = 105;          % torque estimatro gain
+gamma_w = 100;          % speed observer gain
 
-rho_2 = 0.4;            % threshold value for load torque
-rho_3 = 0.7;            % threshold value for rotor speed
+rho_2 = 0.8;            % threshold value for load torque
+rho_3 = 0.8;            % threshold value for rotor speed
